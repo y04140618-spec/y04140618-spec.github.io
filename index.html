@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Be My Valentine</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: cursive;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      color: white;
+      margin-top: 100px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      margin: 10px;
+      transition: 0.3s;
+    }
+
+    #yesBtn {
+      background-color: hotpink;
+      color: white;
+      font-size: 20px;
+    }
+
+    #noBtn {
+      background-color: white;
+      color: hotpink;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Will you be my Valentine? ❤️</h1>
+
+<button id="yesBtn" onclick="sayYes()">Yes 💖</button>
+<button id="noBtn" onclick="makeYesBigger()">No 😢</button>
+
+<script>
+let size = 20;
+
+function sayYes() {
+  document.body.innerHTML = "<h1>YAYYY 💕💕💕</h1>";
+}
+
+function makeYesBigger() {
+  size += 15;
+  document.getElementById("yesBtn").style.fontSize = size + "px";
+}
+</script>
+
+</body>
+</html>
